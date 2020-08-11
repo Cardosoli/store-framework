@@ -12,15 +12,6 @@
   },
 
   "menu-item#major-appliances": {
-        "props":
-            {
-                "type": "category",
-                "highlight": true,
-                "itemProps": {
-                "categoryId": 1, 
-                "text": "Major Appliances"
-                }
-            },
         "blocks": [
             "vtex.menu@2.x:submenu#major"
         ]
@@ -32,16 +23,18 @@
         ]
     },
 
+    "vtex.menu@2.x:menu#major":{
+        "children": [
+            "menu-item#refrigerators",
+            "menu-item#ovens",
+            "menu-item#washers"
+          ],
+          "props":{
+              "orientation": "vertical"
+          }
+      },
+
     "menu-item#small-appliances": {
-        "props":
-            {
-                "type": "category",
-                "highlight": true,
-                "itemProps": {
-                "categoryId": 1, 
-                "text": "Major Appliances"
-                }
-            },
         "blocks": [
             "vtex.menu@2.x:submenu#small"
         ]
@@ -53,49 +46,29 @@
         ]
     },
 
+    "vtex.menu@2.x:menu#small":{
+        "children": [
+            "menu-item#mixers",
+            "menu-item#toasters",
+            "menu-item#coffee"
+          ],
+          "props":{
+              "orientation": "vertical"
+          }
+    },
+
     "menu-item#electronics": {
-        "props":
-            {
-                "type": "category",
-                "highlight": true,
-                "itemProps": {
-                "categoryId": 1, 
-                "text": "Major Appliances"
-                }
-            },
         "blocks": [
             "vtex.menu@2.x:submenu#electronics"
         ]
     },
 
 
-
-  "vtex.menu@2.x:submenu#electronics":{
-    "children":[
-      "vtex.menu@2.x:menu#electronics"
-    ]
-  },
-
-  "vtex.menu@2.x:menu#major":{
-    "children": [
-        "menu-item#refrigerators",
-        "menu-item#ovens",
-        "menu-item#washers"
-      ],
-      "props":{
-          "orientation": "vertical"
-      }
-  },
-  "vtex.menu@2.x:menu#small":{
-      "children": [
-          "menu-item#mixers",
-          "menu-item#toasters",
-          "menu-item#coffee"
-        ],
-        "props":{
-            "orientation": "vertical"
-        }
-  },
+    "vtex.menu@2.x:submenu#electronics":{
+        "children":[
+        "vtex.menu@2.x:menu#electronics"
+        ]
+    },
 
   "vtex.menu@2.x:menu#electronics":{
     "children": [
@@ -106,9 +79,7 @@
       "props":{
           "orientation": "vertical"
       }
-}
-
-
+    }
 
 }
   
