@@ -21,7 +21,7 @@
     ]
   },
 
-  "flex-layout.col#rigth": {
+  "flex-layout.col#right": {
     "children": [
       "product-name",
       "product-price",
@@ -39,5 +39,5 @@
       "showListPrice": false
     }
   }
-  
+
 }
