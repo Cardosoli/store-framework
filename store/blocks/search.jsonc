@@ -38,7 +38,7 @@
     ]
   },
 
-  "flex-layout.row#filter": {
+  "flex-layout.col#filter": {
     "children": [
       "filter-navigator.v3"
     ],
@@ -47,7 +47,7 @@
     }
   },
 
-  "flex-layout.row#search": {
+  "flex-layout.col#search": {
     "children": [
       "search-content"
     ]
